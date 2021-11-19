@@ -95,15 +95,14 @@ const Cursos: NextPage = () => {
           }}
         >
           <div>
-            <form
-              className={`${styles.align}`}
+            <form              
               style={{ display: "flex", flexDirection: "column" }}
               onSubmit={(e) => handleSubmit(e)}
             >
               <label title="Nome">
                 Nome
                 <input
-                  className={`${styles.w3input} ${styles.w3border} ${styles.w3roundlarge}`}
+                  className={`${styles.w3auto} ${styles.w3input} ${styles.w3border} ${styles.w3roundlarge}`}
                   required
                   type="text"
                   name="nome"
@@ -115,7 +114,7 @@ const Cursos: NextPage = () => {
               <label title="Categoria">
                 Categoria
                 <select
-                  className={`${styles.w3center} ${styles.w3select} ${styles.w3border} ${styles.w3roundlarge} ${styles.w3padding} ${styles.w3margin}`}
+                  className={`${styles.align} ${styles.w3center} ${styles.w3select} ${styles.w3border} ${styles.w3roundlarge} ${styles.w3marginright} ${styles.w3padding}`}
                   name="categorias"
                   id="categorias"
                   defaultValue="EDUCACAO_BASICA"
@@ -167,9 +166,13 @@ const Cursos: NextPage = () => {
               {cursos?.map((e) => {
                 if (e.categoria == categoriaCurso) {
                   return (
-                    <p key={e._id} id={e._id}>
+                    <p 
+                    className={`${styles.w3center} ${styles.w3padding} ${styles.w3margin}`}
+                    key={e._id} id={e._id}>
                       {e.nome}{" "}
-                      <button onClick={() => handleDelete(e._id)}>X</button>
+                      <button 
+                      className={`${styles.w3button} ${styles.w3red} ${styles.w3border} ${styles.w3roundlarge} ${styles.w3padding} ${styles.w3hoverblack}`}
+                      onClick={() => handleDelete(e._id)}>Delete</button>
                     </p>
                   );
                 }

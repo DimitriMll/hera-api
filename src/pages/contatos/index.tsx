@@ -114,7 +114,7 @@ const Contatos: NextPage = () => {
             return (
               <>
                 <Accordion
-                  className={`${styles.w3center} ${styles.w3select} ${styles.w3border} ${styles.w3roundlarge} ${styles.w3padding} ${styles.w3margin}`}
+                  className={`${styles.horizontalalign} ${styles.w3select} ${styles.w3border} ${styles.w3roundlarge} ${styles.w3padding} ${styles.w3margin}`}
                   key={e._id + "pp"}
                   style={{ width: 400 }}
                 >
@@ -188,11 +188,10 @@ const Contatos: NextPage = () => {
                   </AccordionDetails>
                 </Accordion>
                 <button
-                  className={`${styles.w3button} ${styles.w3blue} ${styles.w3border} ${styles.w3roundlarge} ${styles.w3padding} ${styles.w3margintop} ${styles.w3hoverindigo}
-                ${styles.w3large}`}
+                  className={`${styles.w3button} ${styles.w3red} ${styles.w3border} ${styles.w3roundlarge} ${styles.w3padding} ${styles.w3hoverblack} ${styles.w3marginleft} `}
                   onClick={() => handleDelete(e._id)}
                 >
-                  X
+                  Delete
                 </button>
               </>
             );

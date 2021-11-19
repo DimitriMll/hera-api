@@ -2,6 +2,11 @@
   padding: 0 2rem;
 }
 
+.horizontalalign {
+justify-content: center;
+align-content: center;
+}
+
 .align{
   align-items: center;
   align-self: center;
@@ -1068,10 +1073,10 @@
 .w3margin-bottom {
   margin-bottom: 16px !important;
 }
-.w3margin-left {
+.w3marginleft {
   margin-left: 16px !important;
 }
-.w3margin-right {
+.w3marginright {
   margin-right: 16px !important;
 }
 .w3padding-small {
@@ -1206,7 +1211,7 @@
   background-color: #ff5722 !important;
 }
 .w3pink,
-.w3hover-pink:hover {
+.w3hoverpink:hover {
   color: #fff !important;
   background-color: #e91e63 !important;
 }
@@ -1221,7 +1226,7 @@
   background-color: #673ab7 !important;
 }
 .w3red,
-.w3hover-red:hover {
+.w3hoverred:hover {
   color: #fff !important;
   background-color: #f44336 !important;
 }
@@ -1246,7 +1251,7 @@
   background-color: #fff !important;
 }
 .w3black,
-.w3hover-black:hover {
+.w3hoverblack:hover {
   color: #fff !important;
   background-color: #000 !important;
 }
